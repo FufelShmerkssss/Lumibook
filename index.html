@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumiBook — онлайн-запись в салоны красоты</title>
+    <meta
+      name="description"
+      content="LumiBook помогает выбрать услугу, мастера и удобное время для записи в салон красоты."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="LumiBook">
+          <img src="assets/lumibook-logo-transparent.png" alt="LumiBook" />
+        </a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="#home">Главная</a>
+          <a href="#services">Услуги</a>
+          <a href="#masters">Мастера</a>
+          <a href="#booking">Запись</a>
+          <a href="#history">История</a>
+        </nav>
+        <a class="button button-small" href="#booking">Записаться</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>
+              <span>Онлайн-запись в</span>
+              <span>салоны красоты</span>
+              <span>за пару кликов</span>
+            </h1>
+            <p class="hero-lead">
+              Выбирайте мастера, услугу и удобное время без звонков и ожидания.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#services">Выбрать услугу</a>
+              <a class="button button-secondary" href="#masters">Посмотреть мастеров</a>
+            </div>
+            <div class="hero-stats" aria-label="Преимущества сервиса">
+              <div>
+                <strong>6</strong>
+                <span>популярных услуг</span>
+              </div>
+              <div>
+                <strong>4.9</strong>
+                <span>средний рейтинг</span>
+              </div>
+              <div>
+                <strong>2 мин</strong>
+                <span>на оформление</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <img class="hero-phone-image" src="assets/hero-phone.png" alt="" />
+
+            <div class="hero-float hero-rating">
+              <span>★</span>
+              <strong>4.9</strong>
+              <small>средний рейтинг<br />мастеров</small>
+            </div>
+            <div class="hero-float hero-times">
+              <span>▣</span>
+              <strong>Свободные<br />окошки сегодня</strong>
+              <small>14:30 · 15:00 · 15:30</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title" id="benefits-title">Все шаги записи в одном интерфейсе</h2>
+          </div>
+          <div class="photo-story" aria-label="Beauty-сцены LumiBook">
+            <img
+              src="assets/beauty-collage.png"
+              alt="Маникюр, укладка, макияж и интерьер салона красоты"
+            />
+            <div class="photo-story-caption">
+              <span>Салоны, мастера и услуги в одном сценарии записи</span>
+              <strong>От выбора процедуры до подтверждения времени</strong>
+            </div>
+          </div>
+          <div class="benefit-grid">
+            <article class="card benefit-card">
+              <span class="benefit-icon benefit-icon-calendar" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M9 6v4M23 6v4M6 13h20M8 8h16a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3Z" />
+                  <path d="m12 21 3 3 6-8" />
+                </svg>
+              </span>
+              <div>
+                <h3>Быстрая запись</h3>
+                <p>Подберите услугу и свободное время без звонков администратору.</p>
+              </div>
+            </article>
+            <article class="card benefit-card">
+              <span class="benefit-icon benefit-icon-master" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 17a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" />
+                  <path d="M6 28a10 10 0 0 1 20 0" />
+                  <path d="m23 7 2 2 4-5" />
+                </svg>
+              </span>
+              <div>
+                <h3>Выбор мастера</h3>
+                <p>Смотрите специализацию, рейтинг и ближайшее доступное окно.</p>
+              </div>
+            </article>
+            <article class="card benefit-card">
+              <span class="benefit-icon benefit-icon-clock" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 28a12 12 0 1 0 0-24 12 12 0 0 0 0 24Z" />
+                  <path d="M16 9v7l5 3" />
+                  <path d="M7 7 4 4M25 7l3-3" />
+                </svg>
+              </span>
+              <div>
+                <h3>Удобные временные слоты</h3>
+                <p>Слоты обновляются визуально, чтобы быстрее выбрать подходящее время.</p>
+              </div>
+            </article>
+            <article class="card benefit-card">
+              <span class="benefit-icon benefit-icon-history" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M7 9h18M7 16h18M7 23h11" />
+                  <path d="M5 4h22v24H5z" />
+                  <path d="m21 24 3 3 5-7" />
+                </svg>
+              </span>
+              <div>
+                <h3>История посещений</h3>
+                <p>Повторяйте любимые процедуры и возвращайтесь к прошлым записям.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title" id="services-title">Выберите уход под свой день</h2>
+          </div>
+          <div class="service-grid">
+            <article class="card service-card" data-service-card data-service="Маникюр">
+              <div>
+                <h3>Маникюр</h3>
+                <p>Аккуратная форма, уход за кутикулой и стойкое покрытие.</p>
+              </div>
+              <div class="card-meta">
+                <strong>от 2 100 ₽</strong>
+                <span>90 минут</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-service="Маникюр">
+                Выбрать
+              </button>
+            </article>
+            <article class="card service-card" data-service-card data-service="Стрижка">
+              <div>
+                <h3>Стрижка</h3>
+                <p>Персональная форма с учетом структуры волос и стиля.</p>
+              </div>
+              <div class="card-meta">
+                <strong>от 2 800 ₽</strong>
+                <span>60 минут</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-service="Стрижка">
+                Выбрать
+              </button>
+            </article>
+            <article class="card service-card" data-service-card data-service="Окрашивание">
+              <div>
+                <h3>Окрашивание</h3>
+                <p>Сложные техники, мягкие переходы и бережный уход после цвета.</p>
+              </div>
+              <div class="card-meta">
+                <strong>от 6 900 ₽</strong>
+                <span>180 минут</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-service="Окрашивание">
+                Выбрать
+              </button>
+            </article>
+            <article class="card service-card" data-service-card data-service="Макияж">
+              <div>
+                <h3>Макияж</h3>
+                <p>Дневной, вечерний или свадебный образ с чистой стойкостью.</p>
+              </div>
+              <div class="card-meta">
+                <strong>от 3 200 ₽</strong>
+                <span>75 минут</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-service="Макияж">
+                Выбрать
+              </button>
+            </article>
+            <article class="card service-card" data-service-card data-service="Укладка">
+              <div>
+                <h3>Укладка</h3>
+                <p>Легкие волны, гладкий финиш или объемная салонная форма.</p>
+              </div>
+              <div class="card-meta">
+                <strong>от 2 500 ₽</strong>
+                <span>50 минут</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-service="Укладка">
+                Выбрать
+              </button>
+            </article>
+            <article class="card service-card" data-service-card data-service="Брови и ресницы">
+              <div>
+                <h3>Брови и ресницы</h3>
+                <p>Форма, окрашивание, ламинирование и выразительный взгляд.</p>
+              </div>
+              <div class="card-meta">
+                <strong>от 1 800 ₽</strong>
+                <span>55 минут</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-service="Брови и ресницы">
+                Выбрать
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section masters" id="masters" aria-labelledby="masters-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title" id="masters-title">Мастера с понятным расписанием</h2>
+          </div>
+          <div class="master-grid">
+            <article class="card master-card" data-master-card data-master="Анна Морозова">
+              <div class="avatar">
+                <img src="assets/master-anna.jpg" alt="Анна Морозова" />
+              </div>
+              <div class="master-info">
+                <h3>Анна Морозова</h3>
+                <p>Колорист, стилист по волосам</p>
+                <div class="rating">4.9 · 128 отзывов</div>
+                <span>Ближайшее время: сегодня, 15:30</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-master="Анна Морозова">
+                Записаться
+              </button>
+            </article>
+            <article class="card master-card" data-master-card data-master="Мария Лебедева">
+              <div class="avatar">
+                <img src="assets/master-maria.jpg" alt="Мария Лебедева" />
+              </div>
+              <div class="master-info">
+                <h3>Мария Лебедева</h3>
+                <p>Нейл-мастер, уход за руками</p>
+                <div class="rating">4.8 · 94 отзыва</div>
+                <span>Ближайшее время: завтра, 11:30</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-master="Мария Лебедева">
+                Записаться
+              </button>
+            </article>
+            <article class="card master-card" data-master-card data-master="Екатерина Власова">
+              <div class="avatar">
+                <img src="assets/master-ekaterina.jpg" alt="Екатерина Власова" />
+              </div>
+              <div class="master-info">
+                <h3>Екатерина Власова</h3>
+                <p>Визажист, бровист</p>
+                <div class="rating">5.0 · 76 отзывов</div>
+                <span>Ближайшее время: пятница, 13:00</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-master="Екатерина Власова">
+                Записаться
+              </button>
+            </article>
+            <article class="card master-card" data-master-card data-master="София Орлова">
+              <div class="avatar">
+                <img src="assets/master-sofia.jpg" alt="София Орлова" />
+              </div>
+              <div class="master-info">
+                <h3>София Орлова</h3>
+                <p>Стилист, мастер укладок</p>
+                <div class="rating">4.9 · 112 отзывов</div>
+                <span>Ближайшее время: суббота, 17:00</span>
+              </div>
+              <button class="button button-secondary" type="button" data-pick-master="София Орлова">
+                Записаться
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking" aria-labelledby="booking-title">
+        <div class="container booking-stack">
+          <div class="booking-copy">
+            <h2 class="section-title" id="booking-title">Соберите запись за несколько шагов</h2>
+            <p>
+              Выберите услугу, мастера, дату и свободный слот. LumiBook покажет итог до
+              подтверждения, чтобы запись была прозрачной.
+            </p>
+          </div>
+
+          <div class="booking-layout">
+            <form class="booking-panel card" id="booking-form">
+              <div class="form-group booking-step">
+                <label>1. Услуги <span class="field-hint">можно выбрать несколько</span></label>
+                <div class="booking-chips" id="service-chips" aria-label="Выбор услуг">
+                  <button class="chip active" type="button" data-service-chip="Маникюр" data-price="2100">Маникюр <small>2 100 ₽</small></button>
+                  <button class="chip" type="button" data-service-chip="Стрижка" data-price="2800">Стрижка <small>2 800 ₽</small></button>
+                  <button class="chip" type="button" data-service-chip="Окрашивание" data-price="6900">Окрашивание <small>6 900 ₽</small></button>
+                  <button class="chip" type="button" data-service-chip="Макияж" data-price="3200">Макияж <small>3 200 ₽</small></button>
+                  <button class="chip" type="button" data-service-chip="Укладка" data-price="2500">Укладка <small>2 500 ₽</small></button>
+                  <button class="chip" type="button" data-service-chip="Брови и ресницы" data-price="1800">Брови и ресницы <small>1 800 ₽</small></button>
+                </div>
+              </div>
+
+              <div class="form-group booking-step">
+                <label>2. Мастер</label>
+                <div class="booking-chips" id="master-chips" aria-label="Выбор мастера">
+                  <button class="chip active" type="button" data-master-chip="Анна Морозова">Анна Морозова <small>4.9</small></button>
+                  <button class="chip" type="button" data-master-chip="Мария Лебедева">Мария Лебедева <small>4.8</small></button>
+                  <button class="chip" type="button" data-master-chip="Екатерина Власова">Екатерина Власова <small>5.0</small></button>
+                  <button class="chip" type="button" data-master-chip="София Орлова">София Орлова <small>4.9</small></button>
+                </div>
+              </div>
+
+              <div class="form-group booking-step">
+                <label for="date-input">3. Дата</label>
+                <input id="date-input" name="date" type="date" />
+              </div>
+
+              <fieldset class="slot-group booking-step">
+                <legend>4. Время</legend>
+                <div class="slot-list" role="list">
+                  <button class="slot active" type="button" data-slot="10:00">10:00</button>
+                  <button class="slot" type="button" data-slot="11:30">11:30</button>
+                  <button class="slot booked" type="button" data-slot="13:00" disabled>13:00</button>
+                  <button class="slot" type="button" data-slot="15:30">15:30</button>
+                  <button class="slot booked" type="button" data-slot="17:00" disabled>17:00</button>
+                  <button class="slot" type="button" data-slot="18:30">18:30</button>
+                </div>
+                <div class="slot-legend" aria-label="Легенда слотов">
+                  <span><i class="dot dot-free"></i>Свободно</span>
+                  <span><i class="dot dot-active"></i>Выбрано</span>
+                  <span><i class="dot dot-booked"></i>Занято</span>
+                </div>
+              </fieldset>
+
+              <button class="button button-full" type="submit">Подтвердить запись</button>
+            </form>
+
+            <aside class="booking-summary card" aria-live="polite">
+              <h3>Ваша запись</h3>
+              <dl class="summary-list">
+                <div>
+                  <dt>Услуги</dt>
+                  <dd id="sum-service">Маникюр</dd>
+                </div>
+                <div>
+                  <dt>Мастер</dt>
+                  <dd id="sum-master">Анна Морозова</dd>
+                </div>
+                <div>
+                  <dt>Дата</dt>
+                  <dd id="sum-date">—</dd>
+                </div>
+                <div>
+                  <dt>Время</dt>
+                  <dd id="sum-time">10:00</dd>
+                </div>
+              </dl>
+              <div class="summary-total">
+                <span>Стоимость</span>
+                <strong id="sum-price">2 100 ₽</strong>
+              </div>
+              <p>Оплата в салоне. Отмена бесплатна за 3 часа до визита.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section history" id="history" aria-labelledby="history-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title" id="history-title">История посещений</h2>
+          </div>
+          <div class="history-grid">
+            <article class="card history-card">
+              <div>
+                <h3>Маникюр</h3>
+                <p>Мария Лебедева</p>
+              </div>
+              <dl>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>12 июня</dd>
+                </div>
+                <div>
+                  <dt>Время</dt>
+                  <dd>11:30</dd>
+                </div>
+                <div>
+                  <dt>Статус</dt>
+                  <dd>Завершено</dd>
+                </div>
+              </dl>
+              <button
+                class="button button-secondary"
+                type="button"
+                data-repeat
+                data-service="Маникюр"
+                data-master="Мария Лебедева"
+                data-slot="11:30"
+              >
+                Повторить запись
+              </button>
+            </article>
+            <article class="card history-card">
+              <div>
+                <h3>Окрашивание</h3>
+                <p>Анна Морозова</p>
+              </div>
+              <dl>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>4 июня</dd>
+                </div>
+                <div>
+                  <dt>Время</dt>
+                  <dd>15:30</dd>
+                </div>
+                <div>
+                  <dt>Статус</dt>
+                  <dd>Завершено</dd>
+                </div>
+              </dl>
+              <button
+                class="button button-secondary"
+                type="button"
+                data-repeat
+                data-service="Окрашивание"
+                data-master="Анна Морозова"
+                data-slot="15:30"
+              >
+                Повторить запись
+              </button>
+            </article>
+            <article class="card history-card">
+              <div>
+                <h3>Брови и ресницы</h3>
+                <p>Екатерина Власова</p>
+              </div>
+              <dl>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>28 мая</dd>
+                </div>
+                <div>
+                  <dt>Время</dt>
+                  <dd>18:30</dd>
+                </div>
+                <div>
+                  <dt>Статус</dt>
+                  <dd>Завершено</dd>
+                </div>
+              </dl>
+              <button
+                class="button button-secondary"
+                type="button"
+                data-repeat
+                data-service="Брови и ресницы"
+                data-master="Екатерина Власова"
+                data-slot="18:30"
+              >
+                Повторить запись
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/lumibook-logo-transparent.png" alt="LumiBook" />
+          <p>Сервис онлайн-записи, который помогает планировать beauty-визиты спокойно и понятно.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">О сервисе</a>
+          <a href="#booking">Помощь</a>
+          <a href="#history">Политика конфиденциальности</a>
+        </div>
+        <address>
+          <span>support@lumibook.ru</span>
+          <span>+7 900 120-45-45</span>
+        </address>
+      </div>
+    </footer>
+
+    <div class="modal" id="success-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Закрыть окно" data-close-modal>×</button>
+        <span class="modal-mark"></span>
+        <h2 id="modal-title">Запись успешно создана!</h2>
+        <p id="modal-text">Мы сохранили выбранные услугу, мастера и время.</p>
+        <button class="button" type="button" data-close-modal>Готово</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
