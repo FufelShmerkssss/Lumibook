@@ -158,7 +158,6 @@ img {
 }
 
 .site-header {
-  position: sticky;
   top: 0;
   z-index: 20;
   background: rgba(255, 253, 251, 0.88);
@@ -1061,8 +1060,6 @@ img {
   cursor: pointer;
 }
 .modal .modal-mark {
-  width: 58px;
-  height: 58px;
   border-radius: 20px;
   background: linear-gradient(135deg, var(--color-success), var(--color-primary));
   position: relative;
